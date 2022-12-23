@@ -5,7 +5,6 @@ import Link from 'next/link';
 export default function Post({ post }: { post: any }) {
   return (
     <div className='card'>
-      {/* <img src={post.frontmatter.cover_image} alt='' /> */}
       <Image
         src={post.frontmatter.cover_image}
         className='image'

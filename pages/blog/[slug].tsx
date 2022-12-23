@@ -2,15 +2,14 @@ import React from 'react';
 import fs from 'fs';
 import path, { join } from 'path';
 import matter from 'gray-matter';
-import marked from 'marked';
+import { marked } from 'marked';
 import Image from 'next/image';
 import Link from 'next/link';
 
 export default function PostPage({
   frontmatter: { title, date, cover_image },
-  slug,
   content,
-}: any) {
+}: any): JSX.Element {
   return (
     <>
       <Link href='/'>
